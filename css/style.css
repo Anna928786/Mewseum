@@ -5,7 +5,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
 
 @font-face {
 font-family: 'MaokenAssortedSans-TC';
-src: url('/fonts/MaokenAssortedSans-TC.ttf') format('truetype');
+src: url('/Mewseum/fonts/MaokenAssortedSans-TC.ttf') format('truetype');
 }
 
 .hero{
@@ -233,7 +233,7 @@ align-self: flex-end;
 
 .customer_review_slider{
     width: 100%;
-    background-image: url('/img/catheadlabelbg.svg');
+    background-image: url('Mewseum/img/catheadlabelbg.svg');
     background-repeat: repeat-x;
     background-color: #E6DDD530;
     padding-top: 100px;
