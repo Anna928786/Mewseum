@@ -42,7 +42,7 @@ h1 {
 
 .cart_items {
     flex: 2;
-    min-width: 550px;
+    min-width: 620px;
 }
 
 .cart_items table {
