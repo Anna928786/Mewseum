@@ -1,0 +1,245 @@
+@font-face {
+font-family: naikaifont;
+src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont-Regular.woff2) format("woff2");
+}
+
+.shop_layout{
+    background-color: #FBF8F0;
+    display: flex;
+    padding: 100px 0;
+    gap: 2em;
+}
+
+.product_area {
+    flex: 1; /* 填滿 sidebar 旁邊剩下的空間 */
+}
+
+.product_container {
+    max-width: 1200px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.sidebar{
+    width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 130px 100px 0 0;
+    padding-top: 50px;
+}
+
+.sidebar button{
+    position: relative;
+    border: none;
+    background: none;
+    padding: 0.5em 1em;
+    font-family: naikaifont;
+    font-size: 1.5em;
+    color: #5C4033;
+    font-weight: 500;
+}
+
+.sidebar button .text {
+    position: absolute;
+    right: 40px;
+    top: 25px;
+}
+
+
+.sidebar button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.5); 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar button:hover::after {
+    opacity: 1;
+}
+
+.product_area{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.title{
+    font-family: naikaifont;
+    font-size: 3.5em;
+    color: #5C4033;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.shop_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.breadcrumb{
+    font-size: 1.5em;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    gap: 1.5em;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #9C9AA5;
+    position: relative;
+    }
+
+    .breadcrumb a:hover {
+    color: #E88FB4;
+}
+
+.breadcrumb .current {
+    color: #E88FB4;
+    font-weight: 600;
+    cursor: default;
+}
+.breadcrumb .divider {
+    color: #B0A89F;
+    font-size: 1em;
+}
+
+.sort_label {
+    font-family: 'Noto Sans TC';
+    font-size: 1.5em;
+    color: #5C4033;
+    margin-right: 0.5em;
+}
+
+.sort_select select{
+    font-family: 'Noto Sans TC';
+    font-size: 1.5em;
+    background-color: #fff;
+    color: #5C4033;
+    border-radius: 15px;
+    padding: 0 0.5em;
+    border: 1px solid #ccc;
+}
+
+.sort_select select:focus {
+    outline: none;
+    border-color: #E88FB4;
+    box-shadow: 0 0 0 2px rgba(232, 143, 180, 0.3);
+}
+.product_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+}
+
+.product_card{
+    text-align: left;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+    text-decoration: none;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.product_card h3{
+    text-align: left;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.product_card .rate{
+    font-size: 1em;
+}
+
+.product_card .price{
+    color: #E9567E;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.product_card img{
+    width: 100%;
+    border-radius: 30px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;}
+
+.product_card img:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.cart {
+    background-color: #FF8FAB;
+    color: #fff;
+    border: none;
+    padding: 0.5em 2.25em;
+    border-radius: 50px;
+    font-size: 1.5em;
+    font-family: 'Noto Sans TC';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.cart img {
+    width: 27px;
+    height: 27px;
+}
+
+.cart:hover {
+    background-color: #FF729A; 
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 2em auto;
+    font-family: 'Noto Sans TC';
+}
+
+.page_btn {
+    background-color: #FCD8C1;
+    color: #5C4033;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.page_btn:hover {
+    background-color: #FBBCA5;
+    transform: scale(1.1);
+}
+
+.page_btn.active {
+    background-color: #E3A37C;
+    color: white;
+    font-weight: bold;
+}

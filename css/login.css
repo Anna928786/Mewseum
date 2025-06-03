@@ -1,0 +1,116 @@
+body {
+    background-color: #FBF8F0;
+    margin: 0;
+}
+
+.login {
+    width: 320px;
+    margin: auto;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+
+.tab_switch {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.25rem;
+    background-color: #ECF0FF;
+    border-radius: 50px;
+    color: #9C9AA5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 150px 0 30px 0;
+    }
+
+.tab_btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.25em;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+.tab_btn.active {
+    background-color: #ff90b3;
+    border-radius: 50px;
+    /* border-bottom: 3px solid #ff90b3; */
+    color: #fff;
+    font-weight: bold;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.login_form p{
+    font-size: 1.25em;
+}
+
+.login_form input {
+    width: 93%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.25em;
+    margin: 10px 0;
+}
+
+input:focus {
+    border: 2px solid #ff90b3;
+    outline: none;
+}
+
+.login_form button {
+    width: 100%;
+    background-color: #ff90b3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.25em;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.password_label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+    font-size: 0.95em;
+}
+
+.password_label a{
+    color: #9C9AA5;
+    font-size: 1.25em;
+}
+
+.auth_form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.auth_form button {
+    background-color: #ff90b3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

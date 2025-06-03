@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Museum</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/pages/index.html">
+                    <img src="/img/logo_h.svg" alt="Museum_logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/pages/about.html">喵繪藝想</a></li>
+                    <li><a href="/pages/shop.html">畫作商店</a></li>
+                    <li><a href="/pages/faq.html">FAQ</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                    <li><a href="#">店面資訊</a></li>
+                </ul>
+            </nav>
+            <div class="toolbar">
+                <a href="#">
+                    <img src="/img/icon/search.svg" alt="search">
+                </a>
+                <a href="/pages/login.html">
+                    <img src="/img/icon/login.svg" alt="login">
+                </a>
+                <a href="/pages/cart.html">
+                    <img src="/img/icon/cart.svg" alt="shoppingcart">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop_layout">
+        <aside class="sidebar">
+            <div class="category">
+                <button>
+                    <div class="text">全部商品</div>
+                    <img src="/img/catpawlabelfornav.svg" alt="catpawlabel">
+                </button>
+                <button>
+                    <div class="text">經典致敬系列</div>
+                    <img src="/img/catpawlabelfornav.svg" alt="catpawlabel">
+                </button>
+                <button>
+                    <div class="text">宮廷喵</div>
+                    <img src="/img/catpawlabelfornav.svg" alt="catpawlabel">
+                </button>
+                <button>
+                    <div class="text">英雄喵</div>
+                    <img src="/img/catpawlabelfornav.svg" alt="catpawlabel">
+                </button>
+                <button>
+                    <div class="text">優雅喵</div>
+                    <img src="/img/catpawlabelfornav.svg" alt="catpawlabel">
+                </button>
+                <button>
+                    <div class="text">文藝復興喵</div>
+                    <img src="/img/catpawlabelfornav.svg" alt="catpawlabel">
+                </button>
+            </div>
+        </aside>
+        <main class="product_area">
+            <div class="product_container">
+            <h2 class="title">畫作商店</h2>
+            <div class="shop_header">
+                <nav class="breadcrumb">
+                    <a href="/css/shop.css">全部商品</a>
+                    <span class="divider">›</span>
+                    <a href="/pages/shop.html">經典致敬系列</a>
+                </nav>
+
+                <div class="sort_select">
+                    <label for="sort" class="sort_label">商品排序</label>
+                    <select id="sort">
+                        <option value="hot_items">熱門商品優先</option>
+                        <option value="price_low">價格：低到高</option>
+                        <option value="price_high">價格：高到低</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product_grid">
+                    <a href="/pages/product-detail.html" class="product_card">
+                        <img src="/img/noRadiusPrint/VanCat.svg" alt="絕育剪耳自畫像">
+                        <h3>絕育剪耳自畫像</h3>
+                        <div class="rate">⭐⭐⭐⭐⭐</div>
+                        <div class="price">NT$ 1,080</div>
+                        <button class="cart" onclick="event.preventDefault()">加入購物車
+                            <img src="/img/icon/cutecart.svg" alt="cart">
+                        </button>
+                    </a>
+
+                    <a href="/pages/product-detail.html" class="product_card">
+                        <img src="/img/noRadiusPrint/Peralcat.svg" alt="戴著鋼珠耳環的貓">
+                        <h3>戴著鋼珠耳環的貓</h3>
+                        <div class="rate">⭐⭐⭐⭐⭐</div>
+                        <div class="price">NT$ 990</div>
+                        <button class="cart" onclick="event.preventDefault()">加入購物車
+                            <img src="/img/icon/cutecart.svg" alt="cart">
+                        </button>
+                    </a>
+
+                    <a href="/pages/product-detail.html" class="product_card">
+                        <img src="/img/noRadiusPrint/yellingCat.svg" alt="吶尼">
+                        <h3>吶尼</h3>
+                        <div class="rate">⭐⭐⭐⭐</div>
+                        <div class="price">NT$ 990</div>
+                        <button class="cart" onclick="event.preventDefault()">加入購物車
+                            <img src="/img/icon/cutecart.svg" alt="cart">
+                        </button>
+                    </a>
+
+                    <a href="/pages/product-detail.html" class="product_card">
+                        <img src="/img/noRadiusPrint/dancingCat.svg" alt="舞喵">
+                        <h3>舞喵</h3>
+                        <div class="rate">⭐⭐⭐⭐⭐</div>
+                        <div class="price">NT$ 990</div>
+                        <button class="cart" onclick="event.preventDefault()">加入購物車
+                            <img src="/img/icon/cutecart.svg" alt="cart">
+                        </button>
+                    </a>
+                    <div class="product_card">
+                        <img src="/img/noRadiusPrint/monaleeCat.svg" alt="蒙娜麗喵的賊笑">
+                        <h3>蒙娜麗喵的賊笑</h3>
+                        <div class="rate">⭐⭐⭐⭐</div>
+                        <div class="price">NT$ 990</div>
+                        <button class="cart">加入購物車
+                            <img src="/img/icon/cutecart.svg" alt="cart">
+                        </button>
+                    </div>
+                    <div class="product_card">
+                        <img src="/img/noRadiusPrint/awakecat.svg" alt="吵醒">
+                        <h3>吵醒</h3>
+                        <div class="rate">⭐⭐⭐⭐⭐</div>
+                        <div class="price">NT$ 990</div>
+                        <button class="cart">加入購物車
+                            <img src="/img/icon/cutecart.svg" alt="cart">
+                        </button>
+                    </div>
+                    <div class="product_card">
+                        <img src="/img/noRadiusPrint/mirrorcat.svg" alt="喵鏡">
+                        <h3>喵鏡</h3>
+                        <div class="rate">⭐⭐⭐⭐</div>
+                        <div class="price">NT$ 990</div>
+                        <button class="cart">加入購物車
+                            <img src="/img/icon/cutecart.svg" alt="cart">
+                        </button>
+                    </div>
+                    <div class="product_card">
+                        <img src="/img/noRadiusPrint/hugratcat.svg" alt="抱著銀貂的貓">
+                        <h3>抱著銀貂的貓</h3>
+                        <div class="rate">⭐⭐⭐⭐⭐</div>
+                        <div class="price">NT$ 990</div>
+                        <button class="cart">加入購物車
+                            <img src="/img/icon/cutecart.svg" alt="cart">
+                        </button>
+                    </div>
+                    <div class="product_card">
+                        <img src="/img/noRadiusPrint/masiaCat.svg" alt="聖貓">
+                        <h3>聖貓</h3>
+                        <div class="rate">⭐⭐⭐⭐⭐</div>
+                        <div class="price">NT$ 890</div>
+                        <button class="cart">加入購物車
+                            <img src="/img/icon/cutecart.svg" alt="cart">
+                        </button>
+                    </div>
+                    <div class="product_card">
+                        <img src="/img/noRadiusPrint/StreetCat.svg" alt="回頭的浪貓">
+                        <h3>回頭的浪貓</h3>
+                        <div class="rate">⭐⭐⭐⭐⭐</div>
+                        <div class="price">NT$ 890</div>
+                        <button class="cart">加入購物車
+                            <img src="/img/icon/cutecart.svg" alt="cart">
+                        </button>
+                    </div>
+                    <div class="product_card">
+                        <img src="/img/noRadiusPrint/sanCatFamily.svg" alt="橡樹下的貓族">
+                        <h3>橡樹下的貓族</h3>
+                        <div class="rate">⭐⭐⭐⭐⭐</div>
+                        <div class="price">NT$ 890</div>
+                        <button class="cart">加入購物車
+                            <img src="/img/icon/cutecart.svg" alt="cart">
+                        </button>
+                    </div>
+                    <div class="product_card">
+                        <img src="/img/noRadiusPrint/babyCats.svg" alt="秋日逗貓圖">
+                        <h3>秋日逗貓圖</h3>
+                        <div class="rate">⭐⭐⭐⭐⭐</div>
+                        <div class="price">NT$ 890</div>
+                        <button class="cart">加入購物車
+                            <img src="/img/icon/cutecart.svg" alt="cart">
+                        </button>
+                    </div>
+            </div>
+            <nav class="pagination">
+                <button class="page_btn">«</button>
+                <button class="page_btn active">1</button>
+                <button class="page_btn">2</button>
+                <button class="page_btn">3</button>
+                <button class="page_btn">»</button>
+            </nav>
+            </div>
+        </main>
+    </div>
+    
+    <div class="footer">
+        <div class="f_container">
+            <div class="logo_2">
+                <img src="/img/logo_V.svg" alt="Museum_logo2">
+            </div>
+            <div class="footer_wrap">
+                <div class="link">
+                    <h3>快速連結</h3>
+                    <ul>
+                        <li><a href="#">關於我們</a></li>
+                        <li><a href="#">常見問題</a></li>
+                        <li><a href="#">隱私權政策</a></li>
+                        <li><a href="#">運送政策</a></li>
+                    </ul>
+                </div>
+                <div class="store">
+                    <h3>門市資訊</h3>
+                    <ul>
+                        <li>Mewseum 貓藝廊 (台北店)</li>
+                        <li>地址:台北市中山區貓咪大道101號</li>
+                        <li><a href="#">更多門市</a></li>
+                    </ul>
+                </div>
+                <div class="contact_container">
+                    <div class="contact_us">
+                        <h3>聯絡我們</h3>
+                        <ul>
+                            <li>Email:meow@mewseum.art</li>
+                            <li>IG:@mewseum.art</li>
+                            <li>Line:@mewseum</li>
+                        </ul>
+                    </div>
+                    <div class="social_icon">
+                        
+                        <a href="#">
+                            <img src="/img/icon/email.svg" alt="email">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icon/line.svg" alt="line">
+                        </a>
+                        <a href="#">
+                            <img src="/img/icon/ig.svg" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+                <p class="copyright">&copy; 2025 緯育TibaMe_前端工程師專業技術養成班學員專題成果。本平台僅供學習與展示，非營利性質。若有侵權疑慮，請聯絡緯育TibaMe，將盡速處理。</p>
+        </div>
+    </div>
+
+</body>
+</html>

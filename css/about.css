@@ -1,0 +1,150 @@
+@font-face {
+font-family: naikaifont;
+src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont-Regular.woff2) format("woff2");
+}
+
+@font-face {
+font-family: 'MaokenAssortedSans-TC';
+src: url('/fonts/MaokenAssortedSans-TC.ttf') format('truetype');
+}
+
+.about_page{
+    background-image: url('/img/background/cathead.png');
+    background-size: 1000px;
+    background-repeat: repeat;
+    background-color: #C59C6C50;
+}
+
+.about_hero {
+    position: relative;
+}
+
+.about_hero img{
+    width: 100%;
+}
+
+
+.title{
+    font-family: MaokenAssortedSans-TC;
+    font-size: 3em;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+p{
+    font-family: naikaifont;
+    font-size: 1.5em;
+    color: #5C4033;
+    line-height: 2em;
+}
+
+.story_wrap {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.story {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 100px 0;
+}
+.summary,
+.point {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 每列 2 欄 */
+    gap: 67px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.summary .text,
+.point .text{
+    display: grid;
+    gap: 10px;
+}
+
+.concept{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2EAD0;
+}
+
+.concept_container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px 0 ;
+}
+
+.line, .text{
+    text-align: center;
+}
+
+.lime img{
+    width: 100%;
+}
+
+.highlight{
+    color: #C59C6C;
+}
+
+.line .text{
+    margin-top: 30px;
+}
+
+.line .text p{
+    font-family: naikaifont;
+    font-size: 2em;
+    color: #5C4033;
+    line-height: 2em;
+}
+
+.identity{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.identity_container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px 0;
+    display: grid;
+    gap: 100px;
+}
+
+.craft,
+.vision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+
+.craft h2,
+.vision h2{
+    font-family: naikaifont;
+    font-size: 2.25em;
+    color: #5C4033;
+    line-height: 2em;
+}
+
+.craft .text,
+.vision .text{
+    display: grid;
+    text-align: left;
+    white-space: nowrap;
+    gap: 10px;
+}

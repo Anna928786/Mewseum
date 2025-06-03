@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header, .footer{
+    width: 100%;
+    background-color: #D2B48C;
+}
+
+.header .container{
+    max-width: 1200px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 183px;
+}
+
+nav{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #5C4033;
+}
+
+nav ul a:hover{
+    color: #F37A91;
+}
+
+.toolbar{
+    display: flex;
+    gap: 15px;   
+}
+
+.toolbar img {
+    width: 37px;
+    height: 37px;
+}
+
+.footer .f_container{
+    max-width: 1200px;
+    height: 240px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    gap:40px;
+    align-items: center;
+}
+
+.link, .store, .contact_us{
+    text-align: left;
+    color: #5C4033;
+    display: flex;
+    flex-direction: column;
+}
+
+.link a, .store a{
+    text-decoration: none;
+    color: #12304A;
+}
+
+.footer_wrap{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+.footer_wrap h3 {
+  margin-bottom: 8px;
+}
+
+.footer_wrap ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo_2 img{
+    width: 148px;
+}
+
+.social_icon{
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.footer_bottom{
+    width: 100%;
+    height: 35px;
+    background-color: #5C4033;
+    text-align: center;
+    align-content: center;
+    color: #D2B48C;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+}
