@@ -85,13 +85,13 @@ nav ul a:hover{
 }
 
 .footer_wrap h3 {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .footer_wrap ul {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .logo_2 img{
