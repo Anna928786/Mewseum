@@ -9,16 +9,20 @@ src: url('../fonts/MaokenAssortedSans-TC.ttf') format('truetype');
 }
 
 .hero{
+    background-image: url("../img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1044px;
     position: relative;
 }
 
-.hero_img img {
+/* .hero_img img {
     width: 100%;
     max-width: 1920px;
     display: block;
     margin: auto;
     height: auto;
-}
+} */
 
 .shop_cta {
 position: absolute;
@@ -40,6 +44,15 @@ gap: 30px;
     line-height: 60px;
 }
 
+.btn_wrapper{
+    background-image: url(../img/creamlabel.svg);
+    background-size: 267px auto;
+    background-repeat: no-repeat;
+    width: 267px;
+    height: 62px;
+    position: relative;
+}
+
 .btn_text{
     font-family: MaokenAssortedSans-TC;
     font-size: 1.5em;
@@ -54,8 +67,6 @@ gap: 30px;
 .shop_cta p, .shop_cta .btn_text {
 text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
-
-
 
 .button a {
     display: inline-block;
@@ -133,9 +144,13 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.3);
     z-index: 2;
 }
 
-.see_more_btn img{
-    display: block;
-    margin: auto;
+.see_more_btn{
+    background-image: url(../img/pinklabel.svg);
+    background-size: 267px auto;
+    background-repeat: no-repeat;
+    width: 267px;
+    height: 62px;
+    margin: 35px auto;
 }
 
 .about{
@@ -209,21 +224,25 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 .about_btn {
+background-image: url(../img/pinklabel.svg);
+background-size: 267px auto;
+background-repeat: no-repeat;
 position: relative;
 margin-top: 20px;
 width: 267px;
-align-self: flex-end;
+height: 62px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-.about_btn img{
-    width: 100%;
+.about_btn a{
+    text-decoration: none;
 }
-
 .about_btn_text{
-    position: absolute;
-    top: 35%;
-    left: 60%;
-    transform: translate(-60% ,-35%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: naikaifont;
     font-size: 1.5em;
     font-weight: 600;
@@ -232,12 +251,16 @@ align-self: flex-end;
 }
 
 .customer_review_slider{
-    width: 100%;
     background-image: url('../img/catheadlabelbg.svg');
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-size: 1920px;
     background-color: #E6DDD530;
-    padding-top: 100px;
     overflow: hidden;
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    height: 920px;
+    
 }
 
 .customer_review_slider h2{
@@ -245,6 +268,7 @@ align-self: flex-end;
     font-size: 3em;
     color: #5C4033;
     text-align: center;
+    padding-top: 100px;
 }
 
 /* slider_track 是滑動卡片的容器 */
@@ -255,7 +279,7 @@ align-self: flex-end;
     padding-left: 100px;
     padding-right: 100px;
     transform: translateX(-17%);
-    margin-top: 180px;
+    margin-top: 200px;
     padding-bottom: 100px;
 }
 
@@ -300,6 +324,12 @@ align-self: flex-end;
     font-family: naikaifont;
     font-size: 1.5em;
     color: #5C4033;
+}
+
+.user_info .stars{
+    font-family: naikaifont;
+    font-size: 1.5em;
+    color: #FFD700;
 }
 
 .customer_review_card p{

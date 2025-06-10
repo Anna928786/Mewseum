@@ -24,7 +24,7 @@ src: url('../fonts/MaokenAssortedSans-TC.ttf') format('truetype');
 }
 
 
-.title{
+.about_hero h1{
     font-family: MaokenAssortedSans-TC;
     font-size: 3em;
     color: #fff;
@@ -32,9 +32,10 @@ src: url('../fonts/MaokenAssortedSans-TC.ttf') format('truetype');
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-weight: normal;
 }
 
-p{
+.about_page p {
     font-family: naikaifont;
     font-size: 1.5em;
     color: #5C4033;
@@ -69,6 +70,7 @@ p{
 .point .text{
     display: grid;
     gap: 10px;
+    text-align: left;
 }
 
 .concept{
@@ -136,7 +138,7 @@ p{
 .craft h2,
 .vision h2{
     font-family: naikaifont;
-    font-size: 2.25em;
+    font-size: 3em;
     color: #5C4033;
     line-height: 2em;
 }

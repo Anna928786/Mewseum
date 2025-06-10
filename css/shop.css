@@ -86,7 +86,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
 
 .breadcrumb{
     font-size: 1.5em;
-    font-family: 'Noto Sans TC';
+    font-family: 'naikaifont';
     font-style: normal;
     font-weight: 400;
     gap: 1.5em;
@@ -113,19 +113,19 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
 }
 
 .sort_label {
-    font-family: 'Noto Sans TC';
+    font-family: 'naikaifont';
     font-size: 1.5em;
     color: #5C4033;
     margin-right: 0.5em;
 }
 
 .sort_select select{
-    font-family: 'Noto Sans TC';
+    font-family: 'naikaifont';
     font-size: 1.5em;
     background-color: #fff;
     color: #5C4033;
-    border-radius: 15px;
-    padding: 0 0.5em;
+    border-radius: 999px;
+    padding: 0.2em 0.5em;
     border: 1px solid #ccc;
 }
 
@@ -142,7 +142,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
 
 .product_card{
     text-align: left;
-    font-family: 'Noto Sans TC';
+    font-family: 'naikaifont';
     font-style: normal;
     font-weight: 400;
     display: flex;
@@ -151,25 +151,29 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     text-decoration: none;
     overflow: hidden;
     border-radius: 30px;
+    color: #5C4033;
+    gap: 10px;
 }
 
 .product_card h3{
     text-align: left;
-    font-family: 'Noto Sans TC';
+    font-family: 'naikaifont';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.5em;
+    color: #5C4033;
 }
 
 .product_card .rate{
-    font-size: 1em;
+    font-size: 1.5em;
+    color: #FFD700;
 }
 
 .product_card .price{
     color: #E9567E;
-    font-family: 'Noto Sans TC';
+    font-family: 'naikaifont';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.5em;
 }
 
@@ -190,7 +194,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     padding: 0.5em 2.25em;
     border-radius: 50px;
     font-size: 1.5em;
-    font-family: 'Noto Sans TC';
+    font-family: 'naikaifont';
     font-style: normal;
     font-weight: 400;
     display: flex;
@@ -217,7 +221,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     justify-content: center;
     gap: 12px;
     margin: 2em auto;
-    font-family: 'Noto Sans TC';
+    font-family: 'naikaifont';
 }
 
 .page_btn {
