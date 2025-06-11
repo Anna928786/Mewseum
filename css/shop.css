@@ -98,8 +98,8 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     position: relative;
     }
 
-    .breadcrumb a:hover {
-    color: #E88FB4;
+.breadcrumb a:hover {
+    color: #E9567E;
 }
 
 .breadcrumb .current {
@@ -188,7 +188,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
 }
 
 .cart {
-    background-color: #FF8FAB;
+    background-color: #FFB3A7;
     color: #fff;
     border: none;
     padding: 0.5em 2.25em;
@@ -197,10 +197,11 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     font-family: 'naikaifont';
     font-style: normal;
     font-weight: 400;
+    white-space: nowrap;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5em;
+    gap: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: fit-content;
@@ -225,7 +226,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
 }
 
 .page_btn {
-    background-color: #FCD8C1;
+    background-color: #FFB3A7;
     color: #5C4033;
     border: none;
     border-radius: 50%;
@@ -243,7 +244,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
 }
 
 .page_btn.active {
-    background-color: #E3A37C;
+    background-color: #FF729A;
     color: white;
     font-weight: bold;
 }

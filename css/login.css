@@ -33,7 +33,7 @@ body {
 }
 
 .tab_btn.active {
-    background-color: #ff90b3;
+    background-color: #FFB3A7;
     border-radius: 50px;
     /* border-bottom: 3px solid #ff90b3; */
     color: #fff;
@@ -62,16 +62,16 @@ body {
 }
 
 input:focus {
-    border: 2px solid #ff90b3;
+    border: 2px solid #FFB3A7;
     outline: none;
 }
 
 .login_form button {
     width: 100%;
-    background-color: #ff90b3;
+    background-color: #FFB3A7;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 10px;
     cursor: pointer;
     font-size: 1.25em;
@@ -103,10 +103,10 @@ input:focus {
 }
 
 .auth_form button {
-    background-color: #ff90b3;
+    background-color: #FFB3A7;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 10px;
     cursor: pointer;
 }
