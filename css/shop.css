@@ -27,30 +27,39 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     gap: 1em;
     margin: 130px 100px 0 0;
     padding-top: 50px;
 }
 
 .sidebar button{
-    position: relative;
     border: none;
     background: none;
     padding: 0.5em 1em;
+}
+
+.sidebar button .text {
+    width: 180px;
+    height: 53px;
+    background-image: url(../img/catpawlabelfornav.svg);
+    background-size: 180px 53px;
+    background-position: center;
+    background-repeat: no-repeat;
+    white-space: nowrap;
     font-family: naikaifont;
     font-size: 1.5em;
     color: #5C4033;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 3dvh;
 }
 
-.sidebar button .text {
-    position: absolute;
-    right: 40px;
-    top: 25px;
-}
 
-
-.sidebar button::after {
+/* .sidebar button::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -61,7 +70,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
 
 .sidebar button:hover::after {
     opacity: 1;
-}
+} */
 
 .product_area{
     flex:1;
