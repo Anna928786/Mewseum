@@ -6,6 +6,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
 .shop_layout{
     background-color: #FBF8F0;
     display: flex;
+    justify-content: center;
     padding: 100px 0;
     gap: 2em;
 }
@@ -240,7 +241,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
         align-items: center;
         padding: 30px;
     }
-
+    
     .sidebar{
         width: 100%;
         margin-top: 0;
@@ -258,7 +259,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
         width: 180px;
         font-size: 1.25rem;
         padding-right: 20px;
-    }
+    } 
 
     .shop_header{
         flex-direction: column;
@@ -286,6 +287,11 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
         padding: 0 20px;
     }
 
+    .title{
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+    
     .product_grid{
         grid-template-columns: repeat(2,1fr);
         row-gap: 2.25em;
@@ -293,10 +299,10 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     }
 
     .sidebar a .text{
-        width: 140px;
+        width: 120px;
         height: 45px;
-        background-size: 140px 45px;
-        font-size: 1.125rem;
+        background-size: 120px 45px;
+        font-size: 1.25rem;
     }
 
     .sort_select select{
@@ -306,4 +312,27 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     .product_card{
         width: 100%;
     }
+
+    .cart{
+        min-height: 50px;
+    }
+
+    .cart img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .pagination {
+        gap: 8px;
+    }
+
+    .page_btn {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 0.75em;
+        transition: all 0.2s ease;
+        position: relative;
+    }
+
 }
