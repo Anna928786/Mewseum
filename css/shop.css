@@ -10,10 +10,6 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     gap: 2em;
 }
 
-.product_area {
-    flex: 1; /* 填滿 sidebar 旁邊剩下的空間 */
-}
-
 .product_container {
     max-width: 1200px;
     margin: 0 20px;
@@ -29,54 +25,34 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     flex-direction: column;
     align-items: flex-end;
     gap: 1em;
-    margin: 130px 100px 0 0;
-    padding-top: 50px;
+    margin-top: 130px 0 0 0;
+    padding-top: 180px;
 }
 
-.sidebar button{
+.sidebar a{
     border: none;
     background: none;
+    text-decoration: none;
     padding: 0.5em 1em;
 }
 
-.sidebar button .text {
-    width: 180px;
+.sidebar a .text {
+    width: 200px;
     height: 53px;
     background-image: url(../img/catpawlabelfornav.svg);
-    background-size: 180px 53px;
+    background-size: 200px 53px;
     background-position: center;
     background-repeat: no-repeat;
     white-space: nowrap;
     font-family: naikaifont;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #5C4033;
     font-weight: 500;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding-right: 3dvh;
-}
-
-
-/* .sidebar button::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: rgba(255, 255, 255, 0.5); 
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.sidebar button:hover::after {
-    opacity: 1;
-} */
-
-.product_area{
-    flex:1;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
+    padding-right: 30px;
 }
 
 .title{
@@ -150,6 +126,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
 }
 
 .product_card{
+    width: 200px;
     text-align: left;
     font-family: 'naikaifont';
     font-style: normal;
@@ -213,7 +190,6 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     gap: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: fit-content;
     margin-top: 10px;
 }
 
@@ -256,4 +232,78 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     background-color: #FF729A;
     color: white;
     font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .shop_layout{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .sidebar{
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+        align-items: center;
+    }
+
+    .sidebar .category{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebar a .text{
+        width: 180px;
+        font-size: 1.25rem;
+        padding-right: 20px;
+    }
+
+    .shop_header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .product_container{
+        margin: 0;
+        width: 100%;
+    }
+
+    .product_grid{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5em;
+    }
+
+    .product_card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .shop_layout{
+        padding: 0 20px;
+    }
+
+    .product_grid{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 2.25em;
+        column-gap: 1em;
+    }
+
+    .sidebar a .text{
+        width: 140px;
+        height: 45px;
+        background-size: 140px 45px;
+        font-size: 1.125rem;
+    }
+
+    .sort_select select{
+        font-size: 1.25em;
+    }
+
+    .product_card{
+        width: 100%;
+    }
 }
