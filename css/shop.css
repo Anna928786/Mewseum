@@ -137,7 +137,6 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     gap: 0.25em;
     text-decoration: none;
     overflow: hidden;
-    border-radius: 30px;
     color: #5C4033;
     gap: 10px;
 }
@@ -208,7 +207,6 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     justify-content: center;
     gap: 12px;
     margin: 2em auto;
-    font-family: 'naikaifont';
 }
 
 .page_btn {
@@ -222,6 +220,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     font-size: 1em;
     transition: all 0.2s ease;
     position: relative;
+    /* font-family: 'naikaifont'; */
 }
 
 .page_btn:hover {
@@ -280,6 +279,11 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     .product_card{
         width: 100%;
     }
+
+    .product_card img:hover {
+        box-shadow: none;
+        transform: none;
+}
 }
 
 @media screen and (max-width: 576px) {
@@ -299,14 +303,14 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     }
 
     .sidebar a .text{
-        width: 120px;
+        width: 170px;
         height: 45px;
-        background-size: 120px 45px;
-        font-size: 1.25rem;
+        background-size: 170px 45px;
+        font-size: 1.5rem;
     }
 
     .sort_select select{
-        font-size: 1.25em;
+        font-size: 1.5em;
     }
 
     .product_card{
@@ -314,7 +318,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     }
 
     .cart{
-        min-height: 50px;
+        min-height: 30px;
     }
 
     .cart img{

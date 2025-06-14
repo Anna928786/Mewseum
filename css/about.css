@@ -33,6 +33,7 @@ src: url('../fonts/MaokenAssortedSans-TC.ttf') format('truetype');
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: normal;
+    white-space: nowrap;
 }
 
 .about_page p {
@@ -91,8 +92,8 @@ src: url('../fonts/MaokenAssortedSans-TC.ttf') format('truetype');
     text-align: center;
 }
 
-.lime img{
-    width: 100%;
+.line img{
+    width: 488px;
 }
 
 .highlight{
@@ -149,4 +150,79 @@ src: url('../fonts/MaokenAssortedSans-TC.ttf') format('truetype');
     text-align: left;
     white-space: nowrap;
     gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .about_page p {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    
+    .about_hero h1{
+        font-size: 2em;
+        white-space: nowrap;
+    }
+
+    .story {
+        margin: 20px 20px;
+    }
+
+    .craft h2,
+    .vision h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .summary,
+    .point,
+    .craft,
+    .vision {
+    grid-template-areas: "img" "text";
+    grid-template-columns: 1fr;
+    gap: 10px;
+    }
+ 
+    .summary .pic,
+    .point .pic,
+    .craft .pic,
+    .vision .pic{
+        grid-area: img;
+    }
+
+    .summary .text,
+    .point .text,
+    .craft .text,
+    .vision .text{
+        grid-area: text;
+    }
+
+    .line{
+        padding: 0 20px;
+    }
+
+    .line img{
+        width: 244px;
+    }
+
+    .line .text p{
+        font-size: 1.25rem;
+    }
+
+    .concept{
+        max-width: 768px;
+        }
+
+    .identity_container{
+        padding: 0 20px;
+        margin: 20px 0;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {
+    .about_hero h1{
+        font-size: 1.5rem;
+        white-space: nowrap;
+    }
+
 }
