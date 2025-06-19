@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./vendors/slick/slick.css">
+    <link rel="stylesheet" href="./vendors/slick/slick-theme.css">
     <title>Mewseum</title>
 </head>
 <body>
@@ -110,7 +112,6 @@
         </section>
 
         <section class="about">
-                <img class="about_bg" src="./img/hone_about_bg.svg" alt="貓背景圖">
             <div class="about_container">
                 <div class="about_wrap">
                     <div class="pic">
@@ -208,7 +209,6 @@
                 </div>
                 <div class="newsletter_img">
                     <div class="speech_text">蛤?!<br>你還沒訂閱?!</div>
-                    <img src="./img/shockedcat.svg" alt="訂閱泡泡圖">
                 </div>
             </div>
         </section>
@@ -266,5 +266,31 @@
         </div>
     </div>
     <script src="./js/hamburger.js"></script>
+    <script src="./vendors/jquery/jQuery v3.7.1.js"></script>
+    <script src="./vendors/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".slider_track").slick({
+                arrows: true,
+                // dots: true,
+                // centerMode: true,
+                // ceterPadding: '10px',
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive:[
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            slidesToShow: 1,
+                            centerMode: true,
+                            centerPadding: '40px'
+                        }
+                    }
+                ]
+            })
+        });
+    </script>
 </body>
 </html>

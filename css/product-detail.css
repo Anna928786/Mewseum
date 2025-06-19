@@ -1,3 +1,8 @@
+@font-face {
+font-family: naikaifont;
+src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont-Regular.woff2) format("woff2");
+}
+
 body {
     background-color: #FBF8F0;
     margin: 0;
@@ -72,7 +77,7 @@ body {
 }
 
 .product_price {
-    color: #f37a9e;
+    color: #FF729A;
     font-size: 24px;
     margin-bottom: 10px;
     font-weight: 600;
@@ -101,7 +106,7 @@ body {
     .stock_fill {
     width: 30%;
     height: 100%;
-    background-color: #f37a9e; 
+    background-color: #FF729A; 
     border-radius: 50px 0 0 50px;
 }
 
@@ -142,11 +147,11 @@ body {
 .qty_btn {
     width: 40px;
     height: 40px;
-    background-color: #fce2e9;
+    background-color: #FBBCA5;
     border: none;
     border-radius: 50%;
     font-size: 24px;
-    color: #f37a9e;
+    color: #FFF;
     cursor: pointer;
     transition: background-color 0.2s ease;
     font-weight: bold;
@@ -157,7 +162,7 @@ body {
 }
 
 .qty_btn:hover {
-    background-color: #fbd0db;
+    background-color: #FF729A;
 }
 
 .quantity_selector input[type="number"] {
@@ -189,7 +194,7 @@ input[type=number] {
 
 .add_to_cart {
     margin-top: 20px;
-    background-color: #f37a9e;
+    background-color: #FBBCA5;
     color: #fff;
     border: none;
     padding: 12px 24px;
@@ -200,7 +205,7 @@ input[type=number] {
 }
 
 .add_to_cart:hover {
-    background-color: #e45886;
+    background-color: #FF729A;
 }
 
 .wishlist_btn{
@@ -213,8 +218,7 @@ input[type=number] {
 }
 
 .wishlist_btn:hover {
-    background-color: #f8bccc;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #FF729A;
 }
 .product_description {
     margin-top: 80px;
@@ -260,8 +264,13 @@ input[type=number] {
     border-radius: 30px;
 }
 
+.product_card .rate{
+    font-size: 1.5em;
+    color: #FFD700;
+}
+
 .cart {
-    background-color: #FF8FAB;
+    background-color: #FBBCA5;
     color: #fff;
     border: none;
     padding: 0.5em 3.5em;

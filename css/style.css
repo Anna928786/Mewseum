@@ -8,21 +8,19 @@ font-family: 'MaokenAssortedSans-TC';
 src: url('../fonts/MaokenAssortedSans-TC.ttf') format('truetype');
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .hero{
     background-image: url("../img/banner.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1044px;
+    width: 100%;
+    height: 700px;
+    background-position: center;
     position: relative;
 }
-
-/* .hero_img img {
-    width: 100%;
-    max-width: 1920px;
-    display: block;
-    margin: auto;
-    height: auto;
-} */
 
 .shop_cta {
 position: absolute;
@@ -38,7 +36,8 @@ gap: 30px;
 
 .shop_cta .text p{
     font-family: MaokenAssortedSans-TC;
-    font-size: 3em;
+    font-size: 3rem;
+    white-space: nowrap;
     color: #fff;
     text-align: center;
     line-height: 60px;
@@ -55,7 +54,7 @@ gap: 30px;
 
 .btn_text{
     font-family: MaokenAssortedSans-TC;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     white-space: nowrap;
     color: #fff;
     position: absolute;
@@ -87,27 +86,25 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 
 .item_container h2{
     font-family: naikaifont;
-    font-size: 3em;
+    font-size: 3rem;
     color: #5C4033;
     text-align: center;
 }
 
 .item_grid{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
     margin-top: 50px;
-    flex-wrap: wrap;
 }
 
 .product_card{
-    grid-column: span 3;
     text-align: left;
 }
 
 .product_card h3{
     font-family: naikaifont;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #5C4033;
     margin-top: 10px;
@@ -115,9 +112,9 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 
 .product_card .price{
     font-family: naikaifont;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: #E9567E;
+    color: #FF729A;
     margin-top: 15px;
 }
 
@@ -134,7 +131,7 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 .see_more_btn .see_more_text{
     font-family: naikaifont;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     white-space: nowrap;
     color: #5C4033;
     position: absolute;
@@ -161,41 +158,34 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.3);
     align-items: center;
     }
 
+.about::before {
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/hone_about_bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.5; 
+    z-index: -1;
+}
+
 .about_container{
     width: 1200px;
     margin: auto;
-    position: absolute;
     display: flex;
     z-index: 1;
-
-}
-
-.about_bg{
-    position: relative;
-    width: 100%;
-    opacity: 0.5;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 0;
 }
 
 .about_wrap{
-    max-width: 1200px;
+    height: 1000px;
     display: flex;
-    margin: 100px 0;
+    padding: 100px 0;
     gap:40px;
     justify-content: center;
-}
-
-.about_wrap .pic {
-    position: relative;  
-}
-
-.about_wrap .pic img{
-    height: 488px;
-    border-radius: 30px;
-    display: block;
 }
 
 .about_wrap .text{
@@ -208,7 +198,7 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 .about_wrap .text h4{
     font-family: naikaifont;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 3rem;
     color: #5C4033;
     white-space: nowrap;
     line-height: 1.3;
@@ -216,7 +206,7 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 
 .about_wrap .text p{
     font-family: naikaifont;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #5C4033;
     white-space: nowrap;
@@ -224,16 +214,16 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 .about_btn {
-background-image: url(../img/pinklabel.svg);
-background-size: 267px auto;
-background-repeat: no-repeat;
-position: relative;
-margin-top: 20px;
-width: 267px;
-height: 62px;
-display: flex;
-justify-content: center;
-align-items: center;
+    background-image: url(../img/pinklabel.svg);
+    background-size: 267px auto;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 20px;
+    width: 267px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about_btn a{
@@ -244,52 +234,52 @@ align-items: center;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: naikaifont;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #5C4033;
     white-space: nowrap;
 }
 
 .customer_review_slider{
-    background-image: url('../img/catheadlabelbg.svg');
+    background-image: url('../img/cat\ label\ bg.png');
     background-repeat: no-repeat;
-    background-size: 1920px;
+    background-size: cover;
+    background-position: center top;
     background-color: #E6DDD530;
-    overflow: hidden;
+    overflow: visible;
     width: 100%;
     max-width: 1920px;
     margin: auto;
-    height: 920px;
+    position: relative;
     
 }
 
 .customer_review_slider h2{
     font-family: naikaifont;
-    font-size: 3em;
+    font-size: 3rem;
     color: #5C4033;
     text-align: center;
-    padding-top: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* slider_track 是滑動卡片的容器 */
 .slider_track {
-    display: flex;
-    gap: 50px;
-    width: max-content;
-    padding-left: 100px;
-    padding-right: 100px;
-    transform: translateX(-17%);
-    margin-top: 200px;
-    padding-bottom: 100px;
+    /* margin-top: 18vw; */
+    padding-bottom: 70px;
 }
 
 /* 單張卡片樣式 */
 .customer_review_card {
-    flex: 0 0 500px;
-    max-width: 500px;
+    flex: 0 0 40vw;
+    width: 100%;
+    max-width: 300px;
     background-color: #FBF8F0;
     border-radius: 60px;
     padding: 20px;
+    margin: 220px 20px 0 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     box-sizing: border-box;
 }
@@ -309,7 +299,7 @@ align-items: center;
     }
 
 .avatar{
-    width: 109px;
+    width: 80px;
     object-fit: cover;
 }
 
@@ -317,26 +307,26 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: 10px;
 }
 
 .user_info h3, .user_info h4{
     font-family: naikaifont;
-    font-size: 1.5em;
+    font-size: 1rem;
     color: #5C4033;
 }
 
 .user_info .stars{
     font-family: naikaifont;
-    font-size: 1.5em;
+    font-size: 1rem;
     color: #FFD700;
 }
 
 .customer_review_card p{
     font-family: naikaifont;
-    font-size: 1.5em;
+    font-size: 1rem;
     color: #5C4033;
-    line-height: 1.5;
+    line-height: 1.2;
     word-wrap: break-word;
     word-break: break-word; 
     white-space: normal;
@@ -364,7 +354,7 @@ align-items: center;
 
 .newsletter_text h3{
     font-family: naikaifont;
-    font-size: 3em;
+    font-size: 3rem;
     color: #5C4033;
     white-space: nowrap;
     font-weight: 600;
@@ -372,7 +362,7 @@ align-items: center;
 
 .newsletter_text p{
     font-family: naikaifont;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     color: #5C4033;
     line-height: 2;
     font-weight: 500;
@@ -380,27 +370,33 @@ align-items: center;
 
 .speech_text{
     font-family: naikaifont;
-    font-size: 3.5em;
+    font-size: 3.2rem;
     color: #5C4033;
     line-height: 1.2;
 }
 
 
 .newsletter_img{
+    background-image: url("../img/shockedcat.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 742px;
+    height: 466px;
+
     position: relative;
-    align-self: flex-start;
-    margin-top: -50px;
+    /* align-self: flex-start;
+    margin-top: -50px; */
 }
 
-.newsletter_img img{
+/* .newsletter_img img{
     height: 466px;
     object-fit: contain;
     display: block;
-}
+} */
 
 .speech_text{
     position: absolute;
-    top: 135px;
+    top: 125px;
     left: 80px;
 }
 
@@ -424,7 +420,7 @@ form input[type="email"] {
     flex: 1;
     border: none;
     padding: 20px 24px;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-family: naikaifont;
     border-radius: 0;
     outline: none;
@@ -435,7 +431,7 @@ form button {
     color: #fff;
     border: none;
     padding: 0 30px;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-family: naikaifont;
     cursor: pointer;
     white-space: nowrap;
@@ -443,5 +439,142 @@ form button {
 }
 
 form button:hover {
-    background-color: #d5446e;
+    background-color: #FF729A;
+}
+
+@media screen and (max-width: 768px) {
+    .hero{
+    width: 100%;
+    height: 60vh;
+    }
+
+    .shop_cta {
+    position: absolute;
+    bottom: 5%;
+    gap: 15px;
+    }
+
+    .shop_cta .text p{
+        font-size: 2rem;
+        line-height: 40px;
+    }
+
+    .btn_wrapper{
+        background-size: 145px auto;
+        width: 145px;
+        height: 34px;
+    }
+
+    .btn_text{
+        font-size: 1rem;
+    }
+
+    .hot_items {
+    width: 100%;
+    padding: 50px 0;
+}
+
+    .item_container{
+        width: min(1200px, 90vw);
+        margin: auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .item_container h2{
+        font-size: 2.5rem;
+        color: #5C4033;
+        text-align: center;
+    }
+
+    .item_grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .product_card h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #5C4033;
+        margin-top: 10px;
+    }
+
+    .product_card .price{
+        font-size: 1rem;
+        font-weight: 600;
+        color: #FF729A;
+        margin-top: 15px;
+    }
+
+    .product_card img{
+        width: 200px;
+        border-radius: 30px;
+    }
+
+    .see_more_btn{
+        position: relative;
+        margin-top: 25px;
+    }
+
+    .see_more_btn .see_more_text{
+        font-size: 1.25rem;
+        left: 55%;
+        transform: translate(-50%, -55%); 
+    }
+
+    .see_more_btn{
+        background-size: 150px auto;
+        width: 150px;
+        height: 35px;
+    }
+
+    .about_container{
+        width: min(1200px,90vw);
+    }
+
+    .about_wrap{
+        display: block;
+    }
+
+    .about_wrap .text,
+    .about_wrap .text h4,
+    .about_wrap .text p,
+    .about_btn {
+    text-align: center
+    };
+
+    
+/* 
+    .about_btn a{
+        text-decoration: none;
+    }
+    .about_btn_text{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: naikaifont;
+        font-size: 1.5em;
+        font-weight: 600;
+        color: #5C4033;
+        white-space: nowrap;
+    } */
+
+
+}
+
+@media screen and (max-width: 576px) {
+        .item_grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product_card h3{
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .product_card .price{
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+
 }

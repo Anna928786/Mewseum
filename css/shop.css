@@ -123,7 +123,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
 .product_grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2em;
+    gap: 2rem;
 }
 
 .product_card{
@@ -146,12 +146,12 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     font-family: 'naikaifont';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #5C4033;
 }
 
 .product_card .rate{
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #FFD700;
 }
 
@@ -160,7 +160,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
     font-family: 'naikaifont';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .product_card img{
