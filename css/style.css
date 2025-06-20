@@ -657,4 +657,25 @@ form button:hover {
     .about_btn{
         align-self: center;
     }
+
+    .about_wrap .text h4{
+    font-size: 1.96rem;
+    white-space: normal;
+    line-height: 1.3;
+    }
+
+    .about_btn {
+    background-size: cover;
+    background-position: center;
+    width: 160px;
+    height: 35px;
+    }
+
+    .about_btn_text{
+    font-size: 1.25rem;
+    }
+
+    .newsletter{
+        padding: 0;
+    }
 }
