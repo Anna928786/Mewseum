@@ -366,17 +366,30 @@ h1 {
 }
 
 
-@media (max-width: 576px){
+@media (max-width: 576px) and (min-width: 361px){
+    body {
+        overflow-x: hidden;
+        position: relative;
+        box-sizing: border-box;
+    }
+    
     .cart_container{
-        transform: scale(0.8);
-        transform-origin: top center;
-        width: 125%;
-        padding-top: 100px;
-        margin: 0 -100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+        transform: scale(0.6) translate(-50%);
+        position: relative;
+        left: 50%;
+        transform-origin: 0 0;
+        width: 300px;
+        margin: 30px 0;
+    }
+
+    .checkout_summary{
+        width: 500px;
+    }    
+
+
+
+    .cart_items th {
+        white-space: nowrap;
     }
 }
 
@@ -393,7 +406,7 @@ h1 {
         position: relative;
         left: 50%;
         transform-origin: 0 0;
-        width: 500px; /* 固定寬度 */
+        width: 300px; /* 固定寬度 */
         margin: 30px 0;
     }
     
