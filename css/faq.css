@@ -1,6 +1,10 @@
+*{
+    box-sizing: border-box;    
+}
+
 body{
     background-image: url('../img/background/cathead.png');
-    background-size: 1000px;
+    background-size: clamp(300px, 50vw, 1000px);
     background-repeat: repeat;
     background-color: #C59C6C50;
 }
@@ -26,12 +30,13 @@ body{
 }
 
 .faq_item {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto 15px auto;
 }
 
 .faq_question {
-    width: 1200px;
+    width: 100%;
     background-color: #5C4033;
     border-radius: 12px;
     padding: 20px;
@@ -63,7 +68,7 @@ body{
 }
 
 .faq_answer {
-    width: 1200px;
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     background-color: #FBF8F0;
@@ -71,6 +76,7 @@ body{
     padding: 0 20px;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 1.5rem;
+    line-height: 1.5;
     color: #5C4033;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
 }
@@ -80,26 +86,13 @@ body{
     padding: 20px;
 }
 
-@media (max-width: 1200px) {
-    .faq {
-        max-width: 100%;
+@media (max-width: 768px) {
+    .faq{
+        max-width: 100% ;
         padding: 0 15px;
     }
-    .faq_item,
-    .faq_question,
-    .faq_answer {
-        width: 100%;
-    }
-    }
+}    
 
-    @media (max-width: 600px) {
-    .faq h2 {
-        font-size: 2rem;
-    }
-    .faq_question {
-        font-size: 1rem;
-    }
-    .faq_answer {
-        font-size: 0.9rem;
-    }
+@media (max-width: 576px) {
+    
 }
