@@ -43,13 +43,41 @@
     <main class="product_page">
         <div class="info_wrap">
         <section class="product_main">
-            <div class="thumbnail_list">
-                <img src="../img/singleshoppage/2.svg" alt="商品展示1" class="thumbnail">
-                <img src="../img/singleshoppage/3.svg" alt="商品展示2" class="thumbnail">
-                <img src="../img/singleshoppage/4.svg" alt="商品展示3" class="thumbnail">
+            <div class="desktop_gallery">
+                <div class="thumbnail_list">
+                    <img src="../img/singleshoppage/canvasprint.svg" alt="商品圖" class="thumbnail active" data-index="0">
+                    <img src="../img/singleshoppage/2.svg" alt="商品展示1" class="thumbnail" data-index="1">
+                    <img src="../img/singleshoppage/3.svg" alt="商品展示2" class="thumbnail" data-index="2">
+                    <img src="../img/singleshoppage/4.svg" alt="商品展示3" class="thumbnail" data-index="3">
+                </div>
+                <div class="product_gallery">
+                    <img src="../img/singleshoppage/canvasprint.svg" alt="商品圖" class="main_img" id="mainImage">
+                </div>
             </div>
-            <div class="product_gallery">
-                <img src="../img/singleshoppage/canvasprint.svg" alt="商品圖" class="main_img">
+
+            <div class="mobile_carousel">
+                <div class="carousel_container" id="carouselContainer">
+                    <div class="carousel_slide"> 
+                        <img src="../img/singleshoppage/canvasprint.svg" alt="商品圖">
+                    </div>                    
+                    <div class="carousel_slide">                     
+                        <img src="../img/singleshoppage/2.svg" alt="商品展示1">
+                    </div>
+                    <div class="carousel_slide">                     
+                        <img src="../img/singleshoppage/3.svg" alt="商品展示2">
+                    </div>
+                    <div class="carousel_slide">
+                        <img src="../img/singleshoppage/4.svg" alt="商品展示3">
+                    </div>
+                </div>
+                <button class="carousel_arrow prev" id="prevBtn">‹</button>
+                <button class="carousel_arrow next" id="nextBtn">›</button>
+                <div class="carousel_nav" id="carouselNav">
+                    <div class="nav_dot active" data-slide="0"></div>
+                    <div class="nav_dot" data-slide="1"></div>
+                    <div class="nav_dot" data-slide="2"></div>
+                    <div class="nav_dot" data-slide="3"></div>
+                </div>
             </div>
         </section>
 
@@ -80,16 +108,16 @@
 
             <div class="cta">
                 <div class="quantity_selector">
-                    <button class="qty_btn">−</button>
+                    <button class="qty_btn" id="decreaseBtn">−</button>
                     <input type="number" value="1" min="1">
-                    <button class="qty_btn">＋</button>
+                    <button class="qty_btn" id="increaseBtn">＋</button>
                 </div>
 
                 <div class="cart_actions">
-                    <button class="add_to_cart">加入購物車
-                        <img src="../img/singleshoppage/bag.svg" alt="bag">
+                    <button class="add_to_cart" id="addToCartBtn">加入購物車
+                        <img src="../img/icon/cart_white.png" alt="購物車">
                     </button>
-                    <button class="wishlist_btn">
+                    <button class="wishlist_btn" id="wishlistBtn">
                         <img src="../img/singleshoppage/heart.svg" alt="wish">
                     </button>
                 </div>
@@ -207,5 +235,6 @@
         </div>
     </div>
     <script src="../js/hamburger.js"></script>
+    <script src="../js/product-detail.js"></script>
 </body>
 </html>
