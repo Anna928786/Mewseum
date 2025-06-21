@@ -47,6 +47,7 @@ class MobileCarousel {
         this.navDots = document.querySelectorAll('.nav_dot');
         this.currentSlide = 0;
         this.totalSlides = images.length;
+        this.isTransitioning = false;
         this.init();
     }
 
@@ -65,66 +66,115 @@ class MobileCarousel {
     }   
 
     prevSlide() {
-        this.currentSlide = (this.currentSlide -1 + this.totalSlides) % this.totalSlides;
+        if (this.isTransitioning) return;
+        this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
         this.updateSlide();
     }
 
     nextSlide() {
-        this.currentSlide = (this.currentSlide +1) % this.totalSlides;
+        if (this.isTransitioning) return;
+        this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
         this.updateSlide();
     }
 
     goToSlide(index) {
+        if (this.isTransitioning) return;
         this.currentSlide = index;
         this.updateSlide();
     }
 
     updateSlide() {
+        this.isTransitioning = true;
         const translateX = -this.currentSlide * 100;
         this.container.style.transform = `translateX(${translateX}%)`;
 
-                // 更新導航點
-                this.navDots.forEach((dot, index) => {
-                    dot.classList.toggle('active', index === this.currentSlide);
-                });
+        // 更新導航點
+        this.navDots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === this.currentSlide);
+        });
+
+        // 等待過渡動畫完成
+        setTimeout(() => {
+            this.isTransitioning = false;
+        }, 300);
+    }
+
+    initTouchEvents() {
+        let startX = 0;
+        let startY = 0;
+        let currentX = 0;
+        let isDragging = false;
+        let hasTriggered = false;
+
+        this.container.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+            isDragging = true;
+            hasTriggered = false;
+        }, { passive: true });
+
+        this.container.addEventListener('touchmove', (e) => {
+            if (!isDragging || hasTriggered || this.isTransitioning) return;
+            
+            currentX = e.touches[0].clientX;
+            const currentY = e.touches[0].clientY;
+            const diffX = startX - currentX;
+            const diffY = startY - currentY;
+            
+            // 確保是水平滑動而非垂直滑動
+            if (Math.abs(diffY) > Math.abs(diffX)) {
+                return;
             }
-
-            initTouchEvents() {
-                let startX = 0;
-                let currentX = 0;
-                let isDragging = false;
-
-                this.container.addEventListener('touchstart', (e) => {
-                    startX = e.touches[0].clientX;
-                    isDragging = true;
-                });
-
-                this.container.addEventListener('touchmove', (e) => {
-                    if (!isDragging) return;
-                    currentX = e.touches[0].clientX;
-                    const diffX = startX - currentX;
-                    
-                    if (Math.abs(diffX) > 50) {
-                        if (diffX > 0) {
-                            this.nextSlide();
-                        } else {
-                            this.prevSlide();
-                        }
-                        isDragging = false;
-                    }
-                });
-
-                this.container.addEventListener('touchend', () => {
-                    isDragging = false;
-                });
-            }
-
-            startAutoPlay(interval = 3000) {
-                setInterval(() => {
+            
+            // 防止頁面垂直滾動
+            e.preventDefault();
+            
+            // 觸發距離
+            if (Math.abs(diffX) > 80) {
+                hasTriggered = true;
+                if (diffX > 0) {
                     this.nextSlide();
-                }, interval);
+                } else {
+                    this.prevSlide();
+                }
             }
-        }
+        }, { passive: false });
+
+        this.container.addEventListener('touchend', (e) => {
+            if (!isDragging) return;
+            
+            const endX = e.changedTouches[0].clientX;
+            const diffX = startX - endX;
+            
+            // 如果在touchmove中沒有觸發，在touchend時檢查
+            if (!hasTriggered && Math.abs(diffX) > 50) {
+                if (diffX > 0) {
+                    this.nextSlide();
+                } else {
+                    this.prevSlide();
+                }
+            }
+            
+            isDragging = false;
+            hasTriggered = false;
+        }, { passive: true });
+
+        // 取消觸摸事件
+        this.container.addEventListener('touchcancel', () => {
+            isDragging = false;
+            hasTriggered = false;
+        }, { passive: true });
+    }
+
+    startAutoPlay(interval = 3000) {
+        setInterval(() => {
+            if (!this.isTransitioning) {
+                this.nextSlide();
+            }
+        }, interval);
+    }
+}
+
 
         // 數量選擇器功能
         class QuantitySelector {
