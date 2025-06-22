@@ -449,8 +449,8 @@ form button:hover {
     }
 
     .shop_cta .text p{
-        font-size: 2rem;
-        line-height: 40px;
+        font-size: 1.75rem;
+        line-height: 30px;
     }
 
     .btn_wrapper{
@@ -517,9 +517,9 @@ form button:hover {
     }
 
     .see_more_btn{
-        background-size: 150px auto;
-        width: 150px;
-        height: 35px;
+        background-size: 170px auto;
+        width: 170px;
+        height: 40px;
     }
 
     .about_container{
@@ -569,8 +569,18 @@ form button:hover {
     }
 
     .about_btn{
-        align-self: center;
+    align-self: center;
+    background-size: cover;
+    background-position: center;
+    width: 170px;
+    height: 40px;
+    padding-left: 10px;
     }
+
+    .about_btn_text{
+    font-size: 1.25rem;
+    }
+
 
     .newsletter_container{
         flex-direction: column;
@@ -662,17 +672,6 @@ form button:hover {
     font-size: 1.96rem;
     white-space: normal;
     line-height: 1.3;
-    }
-
-    .about_btn {
-    background-size: cover;
-    background-position: center;
-    width: 160px;
-    height: 35px;
-    }
-
-    .about_btn_text{
-    font-size: 1.25rem;
     }
 
     .newsletter{
