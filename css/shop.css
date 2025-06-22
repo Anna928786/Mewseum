@@ -289,6 +289,7 @@ src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.89/webfont/NaikaiFont
 @media screen and (max-width: 576px) {
     .shop_layout{
         padding: 0 20px;
+        overflow-x: hidden;
     }
 
     .title{
