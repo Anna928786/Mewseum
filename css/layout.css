@@ -169,10 +169,10 @@ nav ul a:hover{
         top: 100%;
         right: 0;
         background-color: #FBF8F0;
-        padding: 1.25rem;
+        padding: 1.25rem 0;
         text-align: center;
         width: 100%;
-        font-size: 1.5rem;
+        font-size: 1.5rem;    
     }
 
 
@@ -182,7 +182,10 @@ nav ul a:hover{
 
     .nav-menu li{
         margin: 0.625rem 0;
+        width: 100%;
+        text-align: center;
     }
+
 
     .footer .f_container{
         flex-direction: column;
