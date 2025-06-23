@@ -407,4 +407,8 @@ h1 {
     .cart_container {
         padding: 0 10px;
     }
+
+    .cart_items th {
+        text-align: center;
+    }
 }
