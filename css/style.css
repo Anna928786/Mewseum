@@ -124,26 +124,32 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.3);
     margin-top: 25px;
 }
 
-.see_more_btn .see_more_text{
+.see_more_text{
     font-family: naikaifont;
     font-weight: 600;
     font-size: 1.5rem;
     white-space: nowrap;
     color: #5C4033;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
     z-index: 2;
 }
 
 .see_more_btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-image: url(../img/pinklabel.svg);
-    background-size: 267px auto;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     width: 267px;
     height: 62px;
     margin: 35px auto;
+    text-decoration: none;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px;  
 }
 
 .about{
@@ -216,17 +222,17 @@ text-shadow: 0 2px 6px rgba(0,0,0,0.3);
     background-repeat: no-repeat;
     position: relative;
     margin-top: 20px;
+    margin: auto;
     width: 267px;
     height: 62px;
-    display: flex;
-    justify-content: center;
+    display: block;
     align-items: center;
+    text-decoration: none;
+    z-index: 1;
 }
 
-.about_btn a{
-    text-decoration: none;
-}
 .about_btn_text{
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -460,13 +466,13 @@ form button:hover {
     }
 
     .btn_text{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .hot_items {
     width: 100%;
     padding: 50px 0;
-}
+    }
 
     .item_container{
         width: min(1200px, 90vw);
@@ -505,15 +511,9 @@ form button:hover {
         border-radius: 30px;
     }
 
-    .see_more_btn{
-        position: relative;
-        margin-top: 25px;
-    }
-
-    .see_more_btn .see_more_text{
+    .see_more_text{
         font-size: 1.25rem;
         left: 55%;
-        transform: translate(-50%, -55%); 
     }
 
     .see_more_btn{

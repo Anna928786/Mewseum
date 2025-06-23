@@ -3,6 +3,7 @@ const tabButtons = document.querySelectorAll('.tab_btn');
 const loginForm = document.getElementById('login_form');
 const registerForm = document.getElementById('register_form');
 const modal = document.getElementById('successModal');
+const modalTitle = document.getElementById('modalTitle');
 const modalMessage = document.getElementById('modalMessage');
 
 //驗證規則
