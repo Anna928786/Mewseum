@@ -6,12 +6,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Noto Sans TC', sans-serif;
+    font-size: clamp(14px, 2.5vw, 16px);
 }
 
 .cart_container {
     border-radius: 10px;
     max-width: 1000px;
-    width: 100%;
+    width: 90%;
     margin: 30px auto;
     flex-grow: 1;
     display: flex;
@@ -43,6 +44,7 @@ h1 {
 
 .cart_items table {
     width: 100%;
+    min-width: 500px;
     border-collapse: separate;
     border-spacing: 0;
     margin-bottom: 20px;
@@ -74,6 +76,7 @@ h1 {
     display: flex;
     align-items: center;
     gap: 15px;
+    min-width: 200px;
 }
 
 .product_info img {
@@ -249,16 +252,16 @@ h1 {
     width: 100%;
 }
 
-    .discount_code input[type="text"] {
-        padding: 12px 20px;
-        border: 1px solid #ddd;
-        border-radius: 50px;
-        font-size: 1rem;
-        flex-grow: 1;
-        outline: none;
-        transition: border-color 0.3s, box-shadow 0.3s;
-        padding-right: 90px;
-    }
+.discount_code input[type="text"] {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    font-size: 1rem;
+    flex-grow: 1;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    /* padding-right: 90px; */
+}
 
 .discount_code input[type="text"]:focus {
     border-color: #f37a9e;
@@ -267,18 +270,17 @@ h1 {
     .btn_apply_discount {
     background-color: #FFB3A7;
     color: white;
-    padding: 10px 25px;
+    padding: 10px 15px;
     border-radius: 0px  25px 25px 0px;
     font-size: 1rem;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
     position: absolute;
-    right: -20px;
+    right: 0px;
     top: 50%;
     transform: translateY(-50%);
-    padding-right: 25px;
-    padding-left: 25px;
+    padding: 0 15px;
 }
 
 .btn_apply_discount:hover {
@@ -287,27 +289,40 @@ h1 {
 
 @media (max-width: 768px){
 
-    .cart_container{
-        width: 100%;
-        font-size: 14px;
-        box-shadow: none;
-        display: flex;
-        align-items: center;
+    .main_content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
     }
 
-    .main_content{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .cart_container{
+        width: 95%;
+        margin: 20px auto;
     }
 
     .cart_items{
+        width: 100%;
+        max-width: 100%;
+        order: 1;
+    }
+
+    .cart_items table{
+        min-width: unset;
         width: 100%;
     }
 
     .cart_items th{
         text-align: center;
-        padding: 10px 50px;
+        padding: 10px 8px;
+    }
+
+    .cart_items td{
+        text-align: center;
+        padding: 12px 8px;
     }
 
 
@@ -316,6 +331,7 @@ h1 {
         text-align: center;
         gap: 10px;
         justify-content: center;
+        min-width: auto;
     }
 
     .product_info img{
@@ -325,34 +341,30 @@ h1 {
 
     .btn {
     padding: 10px 25px;
-}
+    }
 
     .discount_code{
-        min-width: 530px;
-        order: 1;
+        width: 100%;
+        max-width: 100%;
+        order: 2;
+        box-sizing: border-box;
     }
 
     .checkout_summary{
         width: 100%;
-        order: 2;
+        order: 3;
         min-width: unset;
+        max-width: 100%;
         position: static;
+        box-sizing: border-box;
     }
 
     .checkout_summary h2 {
         font-size: 1.25rem;
-        color: #333;
-        margin-bottom: 25px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #eee;
     }
 
     .summary_row {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 15px;
-        font-size: 1em;
-        color: #555;
+        font-size: 1rem;
     }
 
     .summary_total{
@@ -367,27 +379,24 @@ h1 {
 }
 
 
-@media (max-width: 576px) and (min-width: 361px){
-    body {
-        overflow-x: hidden;
-        position: relative;
+@media (max-width: 576px){      
+    .cart_container{
+        width: 100%;
+        margin: 15px auto;
+        padding: 0 15px;
         box-sizing: border-box;
     }
-    
-    .cart_container{
-        transform: scale(0.6) translate(-50%);
-        position: relative;
-        left: 50%;
-        transform-origin: 0 0;
-        width: 300px;
-        margin: 30px 0;
+
+    .main_content{
+        gap: 20px;
     }
 
+    .cart_items,
+    .discount_code,
     .checkout_summary{
-        width: 500px;
-    }    
-
-
+        width: 100%;
+        max-width: 100%;
+    }
 
     .cart_items th {
         white-space: nowrap;
@@ -395,23 +404,7 @@ h1 {
 }
 
 @media (max-width: 360px){
-    body {
-        overflow-x: hidden;
-        position: relative;
-        box-sizing: border-box;
-        max-height: 1000px;
-    }
-    
     .cart_container {
-        transform: scale(0.6) translate(-50%);
-        position: relative;
-        left: 50%;
-        transform-origin: 0 0;
-        min-width: 300px;
-        margin: 20px 0;
-    }
-    
-    .cart_items th {
-        white-space: nowrap;
+        padding: 0 10px;
     }
 }

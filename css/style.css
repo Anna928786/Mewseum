@@ -522,6 +522,11 @@ form button:hover {
         height: 40px;
     }
 
+    .about{
+        margin: -120px 0;
+        padding: 0;
+    }
+
     .about_container{
         box-sizing: border-box;
         padding: 0;
